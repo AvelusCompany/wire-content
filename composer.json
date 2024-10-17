@@ -1,17 +1,18 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "aveluscompnay/wire-content",
+    "description": "Wire CMS",
     "keywords": [
-        ":vendor_name",
+        "filament",
         "laravel",
-        ":package_slug"
+        "WireContent"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "version": "0.0.1",
+    "homepage": "https://github.com/SSAvelu/wire-content.git",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": ":aveluscompany",
+            "email": "sistemassoporte@aveluscompany.info",
             "role": "Developer"
         }
     ],
@@ -35,16 +36,10 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "WireContent\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
-        }
-    },
+    
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
         "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
@@ -73,10 +68,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "WireContent\\WireContentServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "WireContent": "WireContent\\Facades\\WireContent"
             }
         }
     },
