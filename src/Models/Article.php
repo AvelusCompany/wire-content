@@ -17,8 +17,9 @@ class Article extends Model
         'title',
         'slug',
         'content',
-        'media_id'
+        'media_id',
     ];
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(config('auth.providers.users.model'));
