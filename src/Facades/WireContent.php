@@ -4,6 +4,7 @@ namespace WireContent\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use WireContent\WireContentServiceProvider;
+
 /**
  * @see \VendorName\Skeleton\Skeleton
  */
