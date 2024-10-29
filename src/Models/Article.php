@@ -2,6 +2,7 @@
 
 namespace WireContent\Models;
 
+use App\Models\User;
 use Awcodes\Curator\Models\Media;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -22,10 +23,10 @@ class Article extends Model
 
     public function user(): BelongsTo
     {
-        return $this->belongsTo(config('auth.providers.users.model'));
+        return $this->belongsTo(User::class);
     }
 
-    public function media()
+    public function image(): BelongsTo
     {
         return $this->belongsTo(Media::class, 'media_id');
     }
